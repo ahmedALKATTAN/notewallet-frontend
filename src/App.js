@@ -1,3 +1,14 @@
+/*
+this project is consist from 4 pahe 
+1-home
+2-choose between Note and wallet 
+3-wallet page 
+4-Note page 
+//////
+the user can register in sginup page and can log in if user has an account befor 
+the application is connecte to the database to get the data of note and wallet after save in in mongodb 
+;*/
+
 import { useContext, Fragment } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import NoteApp from "./Note Components/NoteApp";
@@ -19,7 +30,6 @@ function App() {
             <Route path="/" exact>
               <HomePage />
             </Route>
-            {console.log("testauthCtx.isLoggedIn", authCtx.isLoggedIn)}
             {!authCtx.isLoggedIn && (
               <Route path="/auth">
                 <AuthPage />

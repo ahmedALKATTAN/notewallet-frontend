@@ -13,20 +13,3 @@ ReactDOM.render(
   </AuthContextProviderData>,
   document.getElementById("root")
 );
-
-// function password_validate(password) {
-//   var re = {
-//     capital: /[A-Z]/,
-//     digit: /[0-9]/,
-//     charecter: /[!@#\$%\^&\*]/,
-//     small: /[a-z]/,
-//     // full: /^[A-Z]{7,20}$/,
-//   };
-
-//   return (
-//     re.capital.test(password) &&
-//     re.digit.test(password) &&
-//     re.charecter.test(password) &&
-//     re.small.test(password)
-//   );
-// }

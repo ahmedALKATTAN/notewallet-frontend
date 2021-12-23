@@ -1,3 +1,6 @@
+/// here is the Login and sginYp page modiling
+// the user can be registred and login by using data base
+
 import { useState, useContext, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import AuthContext from "../../store of browser provider/auth-context";
@@ -6,7 +9,6 @@ import axios from "axios";
 import validateInfo from "../../ValidateForm";
 import ErrorModal from "../../pages/Errot component/ErrorPage";
 
-//const url="https://note-wallet-app.herokuapp.com/"
 const AuthForm = () => {
   const history = useHistory();
   const authCtx = useContext(AuthContext);
